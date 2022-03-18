@@ -10,6 +10,7 @@ public class DataManager : MonoBehaviour
     void Start()
     {
         item = this;
+        SpawnAnimal();
     }
 
     public void SpawnAnimal()
