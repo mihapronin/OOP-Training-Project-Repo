@@ -8,5 +8,11 @@ public class Dog : Animal
     void Start()
     {
         speed = 5;
+        appropriateFood = "Food_Steak";
+    }
+
+    public override void FoodIsWrong()
+    {
+        Move(0f, -1.0f);
     }
 }

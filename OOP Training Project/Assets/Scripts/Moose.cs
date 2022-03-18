@@ -8,11 +8,11 @@ public class Moose : Animal
     void Start()
     {
         speed = 7;
+        appropriateFood = "Food_Carrot";
     }
 
-    // Update is called once per frame
-    void Update()
+    public override void FoodIsWrong()
     {
-        
+        Move(-1.0f, -0.2f);
     }
 }

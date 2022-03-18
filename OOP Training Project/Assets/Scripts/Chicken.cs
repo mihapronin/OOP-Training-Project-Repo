@@ -8,5 +8,11 @@ public class Chicken : Animal
     void Start()
     {
         speed = 3;
+        appropriateFood = "Food_Cookie";
+    }
+
+    public override void FoodIsWrong()
+    {
+        Move(1.0f, -0.2f);
     }
 }
